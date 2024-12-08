@@ -13,6 +13,8 @@ public class CartPage extends EmagBasePage{
     private WebElement phoneItem;
     @FindBy(xpath = "//*[@class='btn btn-primary btn-sm btn-block']")
     private WebElement seeCartDetails;
+    @FindBy(xpath = "//*[@class='em em-close hidden-xs gtm_6046yfqs']")
+    private WebElement closeCart;
 
     public void clickAddToCart(){
         clickMethods.clickJSElement(phoneItem);
@@ -20,5 +22,8 @@ public class CartPage extends EmagBasePage{
 
     public void clickCartDetails(){
         clickMethods.clickJSElement(seeCartDetails);
+    }
+    public void closeCartTab(){
+        clickMethods.clickElement(closeCart);
     }
 }
