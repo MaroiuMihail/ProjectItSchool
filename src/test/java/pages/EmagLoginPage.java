@@ -8,6 +8,7 @@ public class EmagLoginPage extends EmagBasePage {
     public EmagLoginPage(WebDriver driver) {
         super(driver);
     }
+
     @FindBy(id = "user_login_email")
     private WebElement emailLoginElement;
     @FindBy(id = "user_login_email")
@@ -16,15 +17,15 @@ public class EmagLoginPage extends EmagBasePage {
     private WebElement emailContinueElement;
 
 
-    public void clickUserEmail(){
+    public void clickUserEmail() {
         clickMethods.clickElement(emailLoginElement);
     }
 
-    public void clickContinueButton(){
+    public void clickContinueButton() {
         clickMethods.clickElement(emailContinueElement);
     }
 
-    public void fillUserInfo(String emailRegisterValue){
+    public void fillUserInfo(String emailRegisterValue) {
         clickMethods.fillElement(emailRegisterElement, emailRegisterValue);
     }
 }

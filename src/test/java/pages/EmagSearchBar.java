@@ -17,7 +17,8 @@ public class EmagSearchBar extends EmagBasePage {
     public void itemSearch(String searchItemValue) {
         clickMethods.fillElement(searchItemElement, searchItemValue);
     }
-    public void searchButton(){
+
+    public void searchButton() {
         clickMethods.clickJSElement(confirmButton);
     }
 }

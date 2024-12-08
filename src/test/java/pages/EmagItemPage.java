@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EmagItemPage extends EmagBasePage{
+public class EmagItemPage extends EmagBasePage {
     public EmagItemPage(WebDriver driver) {
         super(driver);
     }
@@ -15,11 +15,11 @@ public class EmagItemPage extends EmagBasePage{
     private WebElement colorBlueButton;
 
 
-    public void clickItemButton(){
+    public void clickItemButton() {
         clickMethods.clickJSElement(colorBlackButton);
     }
 
-    public void clickBlueItemButton(){
+    public void clickBlueItemButton() {
         clickMethods.clickJSElement(colorBlueButton);
     }
 }

@@ -10,7 +10,7 @@ import sharedData.EmagSharedData;
 public class EmagItems extends EmagSharedData {
 
     @Test
-    public void metodaTest(){
+    public void metodaTest() {
 
         EmagHomePage homePageEmag = new EmagHomePage(getDriver());
         homePageEmag.clicksearchBar();
@@ -32,6 +32,8 @@ public class EmagItems extends EmagSharedData {
 
         addtoCartPage.clickAddToCart();
         addtoCartPage.clickCartDetails();
+
+        addtoCartPage.clickCheckOutButton();
     }
 }
 

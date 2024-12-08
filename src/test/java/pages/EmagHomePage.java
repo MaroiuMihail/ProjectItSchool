@@ -17,7 +17,8 @@ public class EmagHomePage extends EmagBasePage {
     public void clickContulMeu() {
         clickMethods.clickJSElement(contulMeu);
     }
-    public void clicksearchBar(){
+
+    public void clicksearchBar() {
         clickMethods.clickElement(searchBarTab);
     }
 }

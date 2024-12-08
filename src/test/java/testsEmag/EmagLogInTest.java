@@ -8,7 +8,7 @@ import sharedData.EmagSharedData;
 public class EmagLogInTest extends EmagSharedData {
 
     @Test
-    public void metodaTest(){
+    public void metodaTest() {
         EmagHomePage homePage = new EmagHomePage(getDriver());
         homePage.clickContulMeu();
 

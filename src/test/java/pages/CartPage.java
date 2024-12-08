@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CartPage extends EmagBasePage{
+public class CartPage extends EmagBasePage {
     public CartPage(WebDriver driver) {
         super(driver);
     }
@@ -15,15 +15,22 @@ public class CartPage extends EmagBasePage{
     private WebElement seeCartDetails;
     @FindBy(xpath = "//*[@class='em em-close hidden-xs gtm_6046yfqs']")
     private WebElement closeCart;
+    @FindBy(xpath = "//*[@class=' btn btn-emag btn-secondary font-size-md btn-block btn-lg gtm_sn11312018']")
+    private WebElement checkOutButton;
 
-    public void clickAddToCart(){
+    public void clickAddToCart() {
         clickMethods.clickJSElement(phoneItem);
     }
 
-    public void clickCartDetails(){
+    public void clickCartDetails() {
         clickMethods.clickJSElement(seeCartDetails);
     }
-    public void closeCartTab(){
+
+    public void closeCartTab() {
         clickMethods.clickElement(closeCart);
+    }
+
+    public void clickCheckOutButton() {
+        clickMethods.clickJSElement(checkOutButton);
     }
 }
