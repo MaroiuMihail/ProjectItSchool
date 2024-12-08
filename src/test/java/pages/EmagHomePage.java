@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePageEmag extends BasePageEmag {
-    public HomePageEmag(WebDriver driver) {
+public class EmagHomePage extends EmagBasePage {
+    public EmagHomePage(WebDriver driver) {
         super(driver);
     }
 

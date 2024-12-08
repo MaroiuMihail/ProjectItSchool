@@ -1,8 +1,10 @@
 package testsEmag;
 
 import org.testng.annotations.Test;
-import pages.HomePageEmag;
-import pages.SearchBarEmag;
+import pages.CartPage;
+import pages.EmagHomePage;
+import pages.EmagItemPage;
+import pages.EmagSearchBar;
 import sharedData.EmagSharedData;
 
 public class EmagItems extends EmagSharedData {
@@ -10,13 +12,23 @@ public class EmagItems extends EmagSharedData {
     @Test
     public void metodaTest(){
 
-        HomePageEmag homePageEmag = new HomePageEmag(getDriver());
+        EmagHomePage homePageEmag = new EmagHomePage(getDriver());
         homePageEmag.clicksearchBar();
 
         String searchItemValue = "telefon";
-        SearchBarEmag searchBarEmag = new SearchBarEmag(getDriver());
+        EmagSearchBar searchBarEmag = new EmagSearchBar(getDriver());
         searchBarEmag.itemSearch(searchItemValue);
 
         searchBarEmag.searchButton();
+
+        EmagItemPage emagItemPage = new EmagItemPage(getDriver());
+        emagItemPage.clickItemButton();
+
+        CartPage addtoCartPage = new CartPage(getDriver());
+        addtoCartPage.clickAddToCart();
+        addtoCartPage.clickCartDetails();
     }
 }
+
+
+

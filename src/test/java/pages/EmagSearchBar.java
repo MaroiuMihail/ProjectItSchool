@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SearchBarEmag extends BasePageEmag {
-    public SearchBarEmag(WebDriver driver) {
+public class EmagSearchBar extends EmagBasePage {
+    public EmagSearchBar(WebDriver driver) {
         super(driver);
     }
 
