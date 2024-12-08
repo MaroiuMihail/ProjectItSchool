@@ -11,9 +11,13 @@ public class HomePageEmag extends BasePageEmag {
 
     @FindBy(id = "my_account")
     private WebElement contulMeu;
-
+    @FindBy(id = "searchboxTrigger")
+    private WebElement searchBarTab;
 
     public void clickContulMeu() {
         clickMethods.clickJSElement(contulMeu);
+    }
+    public void clicksearchBar(){
+        clickMethods.clickElement(searchBarTab);
     }
 }
