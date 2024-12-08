@@ -3,10 +3,9 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import sharedData.SharedData;
 
-public class HomePage extends BasePage {
-    public HomePage(WebDriver driver) {
+public class HomePageEmag extends BasePageEmag {
+    public HomePageEmag(WebDriver driver) {
         super(driver);
     }
 

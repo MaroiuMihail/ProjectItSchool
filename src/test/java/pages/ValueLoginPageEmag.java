@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ValueLoginPage extends BasePage{
-    public ValueLoginPage(WebDriver driver) {
+public class ValueLoginPageEmag extends BasePageEmag {
+    public ValueLoginPageEmag(WebDriver driver) {
         super(driver);
     }
 

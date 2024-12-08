@@ -4,12 +4,12 @@ import helpMethods.ClickMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePage {
+public class BasePageEmag {
 
     public WebDriver driver;
     public ClickMethods clickMethods;
 
-    public BasePage(WebDriver driver){
+    public BasePageEmag(WebDriver driver){
         this.driver = driver;
         clickMethods = new ClickMethods(this.driver);
         PageFactory.initElements(this.driver, this);

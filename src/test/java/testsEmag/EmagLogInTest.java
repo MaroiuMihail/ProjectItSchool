@@ -1,28 +1,28 @@
-package tests;
+package testsEmag;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ValueLoginPage;
-import sharedData.SharedData;
+import pages.HomePageEmag;
+import pages.LoginPageEmag;
+import pages.ValueLoginPageEmag;
+import sharedData.EmagSharedData;
 
-public class EmagLogInTest extends SharedData {
+public class EmagLogInTest extends EmagSharedData {
 
     private static final Logger log = LoggerFactory.getLogger(EmagLogInTest.class);
 
     @Test
     public void metodaTest(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePageEmag homePage = new HomePageEmag(getDriver());
         homePage.clickContulMeu();
 
-        LoginPage loginPage = new LoginPage(getDriver());
+        LoginPageEmag loginPage = new LoginPageEmag(getDriver());
         loginPage.clickUserEmail();
 
         String emailRegisterValue = "mihai_maroiu01@gmail.com";
 
-        ValueLoginPage valueLoginPage = new ValueLoginPage(getDriver());
+        ValueLoginPageEmag valueLoginPage = new ValueLoginPageEmag(getDriver());
         valueLoginPage.fillUserInfo(emailRegisterValue);
 
         loginPage.clickContinueButton();
