@@ -29,9 +29,10 @@ public class EmagItems extends EmagSharedData {
         addtoCartPage.closeCartTab();
 
         emagItemPage.clickBlueItemButton();
-
         addtoCartPage.clickAddToCart();
+
         addtoCartPage.clickCartDetails();
+        addtoCartPage.clickDeleteItem();
 
         addtoCartPage.clickCheckOutButton();
     }
