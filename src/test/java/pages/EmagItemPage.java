@@ -10,16 +10,21 @@ public class EmagItemPage extends EmagBasePage {
     }
 
     @FindBy(xpath = "//*[@alt='Telefon mobil Apple iPhone 13, 128GB, 5G, Midnight']")
-    private WebElement colorBlackButton;
+    private WebElement colorBlackPhone;
     @FindBy(xpath = "//*[@title='Albastru']")
-    private WebElement colorBlueButton;
-
+    private WebElement colorBluePhone;
+    @FindBy(xpath = "//img[contains(@alt, 'Laptop Acer Aspire 5')]")
+    private WebElement laptopItemPage;
 
     public void clickItemButton() {
-        clickMethods.clickJSElement(colorBlackButton);
+        clickMethods.clickJSElement(colorBlackPhone);
     }
 
     public void clickBlueItemButton() {
-        clickMethods.clickJSElement(colorBlueButton);
+        clickMethods.clickJSElement(colorBluePhone);
+    }
+
+    public void clickLaptop(){
+        clickMethods.clickJSElement(laptopItemPage);
     }
 }

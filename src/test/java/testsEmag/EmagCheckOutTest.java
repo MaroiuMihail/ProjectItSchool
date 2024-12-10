@@ -1,16 +1,16 @@
 package testsEmag;
 
 import org.testng.annotations.Test;
-import pages.CartPage;
-import pages.EmagHomePage;
-import pages.EmagItemPage;
-import pages.EmagSearchBar;
+import pages.*;
 import sharedData.EmagSharedData;
 
-public class EmagItems extends EmagSharedData {
+public class EmagCheckOutTest extends EmagSharedData {
 
     @Test
     public void metodaTest() {
+
+        EmagCookiesPage emagCookiesPage = new EmagCookiesPage(getDriver());
+        emagCookiesPage.clickCookiesAccept();
 
         EmagHomePage homePageEmag = new EmagHomePage(getDriver());
         homePageEmag.clicksearchBar();
@@ -24,17 +24,17 @@ public class EmagItems extends EmagSharedData {
         EmagItemPage emagItemPage = new EmagItemPage(getDriver());
         emagItemPage.clickItemButton();
 
-        CartPage addtoCartPage = new CartPage(getDriver());
-        addtoCartPage.clickAddToCart();
-        addtoCartPage.closeCartTab();
+        EmagAddButtonPage addtoEmagAddButtonPage = new EmagAddButtonPage(getDriver());
+        addtoEmagAddButtonPage.clickAddToCart();
+        addtoEmagAddButtonPage.closeCartTab();
 
         emagItemPage.clickBlueItemButton();
-        addtoCartPage.clickAddToCart();
+        addtoEmagAddButtonPage.clickAddToCart();
 
-        addtoCartPage.clickCartDetails();
-        addtoCartPage.clickDeleteItem();
+        addtoEmagAddButtonPage.clickCartDetails();
+        addtoEmagAddButtonPage.clickDeleteItem();
 
-        addtoCartPage.clickCheckOutButton();
+        addtoEmagAddButtonPage.clickCheckOutButton();
     }
 }
 

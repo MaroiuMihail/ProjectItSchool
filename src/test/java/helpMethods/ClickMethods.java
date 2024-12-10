@@ -36,4 +36,9 @@ public class ClickMethods {
         waitVisibleElement(element);
         element.sendKeys(text);
     }
+
+    public void clearElement(WebElement element){
+        waitVisibleElement(element);
+        element.clear();
+    }
 }
