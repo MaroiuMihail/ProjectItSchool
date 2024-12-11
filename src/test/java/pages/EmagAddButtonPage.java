@@ -9,9 +9,9 @@ public class EmagAddButtonPage extends EmagBasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@class='btn btn-xl btn-primary btn-emag btn-block main-button gtm_680klw yeahIWantThisProduct']")
+    @FindBy(xpath = "//*[@class='btn btn-xl btn-emag btn-block main-button gtm_680klw yeahIWantThisProduct']")
     private WebElement phoneItem;
-    @FindBy(xpath = "//*[@class='btn btn-primary btn-sm btn-block']")
+    @FindBy(xpath = "//*[@class='btn btn-secondary btn-sm btn-block']")
     private WebElement seeCartDetails;
     @FindBy(xpath = "//*[@class='em em-close hidden-xs gtm_6046yfqs']")
     private WebElement closeCart;

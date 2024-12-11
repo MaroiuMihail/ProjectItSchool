@@ -9,7 +9,7 @@ public class EmagCookiesPage extends EmagBasePage{
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@class='btn btn-primary btn-block js-accept gtm_h76e8zjgoo']")
+    @FindBy(xpath = "//*[@class='btn btn-secondary btn-block js-accept gtm_h76e8zjgoo']")
     private WebElement cookiesAccept;
 
     public void clickCookiesAccept(){

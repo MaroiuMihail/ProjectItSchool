@@ -24,8 +24,8 @@ public class EmagSharedData {
         return driver;
     }
 
-//    @AfterMethod
-//    public void clearBrowser() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void clearBrowser() {
+        driver.quit();
+    }
 }
